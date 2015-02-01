@@ -1,0 +1,67 @@
+\documentclass[dvipdfmx]{beamer}
+
+% フォントの埋め込み
+\special{pdf: mapfile ptex-ipaex.map}
+
+% テーマの設定
+%\usecolortheme{default}
+%\usecolortheme{beaver}
+%\useoutertheme[]{miniframes}
+\useoutertheme[]{infolines}
+%\useinnertheme{default}
+%\usetheme{CambridgeUS}
+
+% ページ番号の表示
+%\setbeamertemplate{footline}[frame number]
+% ナビゲーションの非表示
+\setbeamertemplate{navigation symbols}{}
+
+% フォントの設定
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+% 数式のフォント
+\usefonttheme{professionalfonts}
+
+% block環境
+\setbeamercolor{block title}{bg=black!15}
+\setbeamercolor{block body}{bg=black!15}
+
+\setbeamercolor{title}{bg=black!15}
+
+% しおりの文字化け防止
+\AtBeginDvi{\special{pdf:tounicode EUC-UCS2}}
+
+% パッケージ
+\usepackage{euler}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{subfigure} 
+
+% 記号の定義
+\newcommand{\bvec}[1]{\mbox{\boldmath $#1$}}
+\newcommand{\argmax}{\operatornamewithlimits{argmax}}
+\newcommand{\argmin}{\operatornamewithlimits{argmin}}
+\newcommand{\st}{\mathop{\rm s.t.}\limits}
+\newcommand{\dom}{\operatornamewithlimits{dom}}
+\newcommand{\co}{\operatornamewithlimits{co}}
+
+% タイトルなど
+\title[]{Beamer Template}
+\subtitle{}
+\author[]{Author}
+\institute[]{Institute}
+\date{Date}
+
+\begin{document}
+
+% Title Page
+\begin{frame}
+\titlepage
+\end{frame}
+
+%\begin{frame}{Outline}
+%\tableofcontents
+%\end{frame}
+
+\end{document}
