@@ -1,9 +1,9 @@
 \documentclass[dvipdfmx]{beamer}
 
-% $B%U%)%s%H$NKd$a9~$_(B
+% フォントの埋め込み
 \special{pdf: mapfile ptex-ipaex.map}
 
-% $B%F!<%^$N@_Dj(B
+% テーマの設定
 %\usecolortheme{default}
 %\usecolortheme{beaver}
 %\useoutertheme[]{miniframes}
@@ -11,26 +11,26 @@
 %\useinnertheme{default}
 %\usetheme{CambridgeUS}
 
-% $B%Z!<%8HV9f$NI=<((B
+% ページ番号の表示
 %\setbeamertemplate{footline}[frame number]
-% $B%J%S%2!<%7%g%s$NHsI=<((B
+% ナビゲーションの非表示
 \setbeamertemplate{navigation symbols}{}
 
-% $B%U%)%s%H$N@_Dj(B
+% フォントの設定
 \renewcommand{\kanjifamilydefault}{\gtdefault}
-% $B?t<0$N%U%)%s%H(B
+% 数式のフォント
 \usefonttheme{professionalfonts}
 
-% block$B4D6-(B
+% block 環境
 \setbeamercolor{block title}{bg=black!15}
 \setbeamercolor{block body}{bg=black!15}
 
 \setbeamercolor{title}{bg=black!15}
 
-% $B$7$*$j$NJ8;z2=$1KI;_(B
+% しおりの文字化け防止
 \AtBeginDvi{\special{pdf:tounicode EUC-UCS2}}
 
-% $B%Q%C%1!<%8(B
+% パッケージ
 \usepackage{euler}
 \usepackage{graphicx}
 \usepackage{multirow}
@@ -38,7 +38,7 @@
 \usepackage{algorithmic}
 \usepackage{subfigure} 
 
-% $B5-9f$NDj5A(B
+% 記号の定義
 \newcommand{\bvec}[1]{\mbox{\boldmath $#1$}}
 \newcommand{\argmax}{\operatornamewithlimits{argmax}}
 \newcommand{\argmin}{\operatornamewithlimits{argmin}}
@@ -46,7 +46,7 @@
 \newcommand{\dom}{\operatornamewithlimits{dom}}
 \newcommand{\co}{\operatornamewithlimits{co}}
 
-% $B%?%$%H%k$J$I(B
+% タイトルなど
 \title[]{Beamer Template}
 \subtitle{}
 \author[]{Author}
