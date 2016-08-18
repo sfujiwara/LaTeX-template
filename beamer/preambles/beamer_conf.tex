@@ -1,0 +1,31 @@
+% フォントの埋め込み
+\special{pdf: mapfile ptex-ipaex.map}
+
+% テーマの設定
+%\usecolortheme{default}
+%\usecolortheme{beaver}
+%\useoutertheme[]{miniframes}
+\useoutertheme[]{infolines}
+%\useinnertheme{default}
+%\usetheme{CambridgeUS}
+
+
+% block 環境
+\setbeamercolor{block title}{bg=black!15}
+\setbeamercolor{block body}{bg=black!15}
+\setbeamercolor{title}{bg=black!15}
+
+% ページ番号の表示
+%\setbeamertemplate{footline}[frame number]
+
+% ナビゲーションの非表示
+\setbeamertemplate{navigation symbols}{}
+
+% フォントの設定
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+
+% 数式のフォント
+\usefonttheme{professionalfonts}
+
+% しおりの文字化け防止
+\AtBeginDvi{\special{pdf:tounicode EUC-UCS2}}

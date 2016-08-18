@@ -1,49 +1,13 @@
 \documentclass[dvipdfmx]{beamer}
 
-% フォントの埋め込み
-\special{pdf: mapfile ptex-ipaex.map}
-
-% テーマの設定
-%\usecolortheme{default}
-%\usecolortheme{beaver}
-%\useoutertheme[]{miniframes}
-\useoutertheme[]{infolines}
-%\useinnertheme{default}
-%\usetheme{CambridgeUS}
-
-% ページ番号の表示
-%\setbeamertemplate{footline}[frame number]
-% ナビゲーションの非表示
-\setbeamertemplate{navigation symbols}{}
-
-% フォントの設定
-\renewcommand{\kanjifamilydefault}{\gtdefault}
-% 数式のフォント
-\usefonttheme{professionalfonts}
-
-% block 環境
-\setbeamercolor{block title}{bg=black!15}
-\setbeamercolor{block body}{bg=black!15}
-\setbeamercolor{title}{bg=black!15}
-
-% しおりの文字化け防止
-\AtBeginDvi{\special{pdf:tounicode EUC-UCS2}}
+\input{preambles/beamer_conf}
+\input{preambles/math}
 
 % パッケージ
-%\usepackage{algorithm}
-%\usepackage{algorithmic}
 \usepackage{euler}
 \usepackage{graphicx}
 \usepackage{multirow}
-\usepackage{subfigure} 
-
-% 記号の定義
-\newcommand{\bvec}[1]{\mbox{\boldmath $#1$}}
-\newcommand{\argmax}{\operatornamewithlimits{argmax}}
-\newcommand{\argmin}{\operatornamewithlimits{argmin}}
-\newcommand{\st}{\mathop{\rm s.t.}\limits}
-\newcommand{\dom}{\operatornamewithlimits{dom}}
-\newcommand{\co}{\operatornamewithlimits{co}}
+\usepackage{subfigure}
 
 % タイトルなど
 \title[]{Title}
